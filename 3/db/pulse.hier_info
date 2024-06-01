@@ -1,0 +1,31 @@
+|pulse
+T1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+RST => inst4.ACLR
+RST => inst9.ACLR
+RST => inst7.ACLR
+RST => inst6.ACLR
+RST => inst5.ACLR
+CLK => inst3.IN0
+S0 => 21mux:inst1.S
+S0 => 21mux:inst.S
+T3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+T2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+T4 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pulse|21mux:inst1
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|pulse|21mux:inst
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
